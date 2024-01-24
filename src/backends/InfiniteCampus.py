@@ -5,6 +5,9 @@ class InfiniteCampus():
         self.url = url
         self.username = username
         self.password = password
+        self.logged = False
+        self.started = False
+
     def start(self):
         self.driver = webdriver.Chrome()
         self.driver.get(self.url)
